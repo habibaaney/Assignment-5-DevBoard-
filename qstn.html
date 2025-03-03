@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <nav class="rounded-lg">
+      <div
+        class="navbar bg-base-100 shadow-sm flex items-center justify-between"
+      >
+        <div class="flex items-center">
+          <img src="assets/logo.png" alt="" />
+
+          <p class="btn btn-ghost text-xl">
+            Dev<span class="text-xl font-bold">Board</span>
+          </p>
+        </div>
+
+        <div>
+          <button id="back-btn" class="bg-blue-600 text-white p-2 rounded-lg">
+            Back to desk
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <section>
+      <h1 class="m-5 text-center font-bold">Blogs</h1>
+      <div>
+        <div class="collapse bg-base-100 border border-base-300">
+          <div class="collapse-title font-semibold">
+            Question-1: What are the different ways to select an element in the
+            DOM?
+          </div>
+          <div class="text-sm p-4">
+            Different ways to select an element in the DOM are using getElementById("id") ,getElementsByClassName("class") ,getElementsByTagName("tag") ,querySelector("selector") ,querySelectorAll("selector") .
+
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="collapse bg-base-100 border border-base-300">
+          <div class="collapse-title font-semibold">
+            Question-2: What is the difference between innerHTML, innerText, and
+            textContent ?
+          </div>
+          <div class="text-sm p-4">
+            The difference between innerHTML, innerText, and textContent :
+            innerHTML	Returns or sets HTML content.
+            innerText	Returns or set text in an element.
+            textContent	Returns or set all the text content.
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="collapse bg-base-100 border border-base-300">
+          <div class="collapse-title font-semibold">
+            Question-3: What is event delegation in the DOM?
+          </div>
+          <div class="text-sm p-4">
+            Event delegation is adding an event listener to a parent element instead of individual child elements. It improves performance and works well for dynamically added elements.
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="collapse bg-base-100 border border-base-300">
+          <div class="collapse-title font-semibold">
+            Question-4: What is event bubbling in the DOM?
+          </div>
+          <div class="text-sm p-4">
+            Event bubbling happens when an event starts at the target element and moves up to parent elements.
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="collapse bg-base-100 border border-base-300">
+          <div class="collapse-title font-semibold">
+            Question-5: How do you create, add, and remove elements using
+            JavaScript?
+          </div>
+          <div class="text-sm p-4">
+            Let me give examples of creat, add and remove elements using javascript.
+             Create: let newDiv = document.createElement("div")
+             Add: document.body.appendChild(newDiv)
+             Remove: document.body.removeChild(newDiv).
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="./script/qstn.js"></script>
+  </body>
+</html>
